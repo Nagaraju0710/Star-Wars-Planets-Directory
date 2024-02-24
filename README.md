@@ -22,8 +22,11 @@ This web application showcases information about planets from the Star Wars univ
 
 1. Clone the repository:
 
-   ```bash
- [  git clone https://github.com/your-username/star-wars-planets-directory.git](https://github.com/Nagaraju0710/Star-Wars-Planets-Directory)
+  https://github.com/Nagaraju0710/Star-Wars-Planets-Directory
+
+## Deployed Preview Link:
+
+https://star-wars-planets-directory-2h9xl5kh3-nagaraju0710.vercel.app/
 
 ## Navigate to the project directory:
 
