@@ -1,0 +1,164 @@
+.App {
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(45deg, rgb(169, 173, 173));
+}
+
+#heading {
+    color: darkolivegreen;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+#heading:hover {
+    cursor: pointer;
+    text-decoration-color: rgb(42, 146, 96);
+    text-underline-offset: 0.4em;
+    color: cadetblue;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.planets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.planet-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    /* Add animation to fade in */
+    animation-fill-mode: both;
+    /* Ensure the element stays in its final state */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Add transition for box-shadow */
+    background-color: lightcyan;
+
+}
+
+.planet-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: antiquewhite;
+
+}
+
+
+.planet-card h2 {
+    margin-top: 0;
+}
+
+.planet-card ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+body {
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 400% 400%;
+    animation: rainbowBackground 10s ease infinite;
+}
+
+@keyframes rainbowBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.planet-card h2 {
+    margin-top: 0;
+    color: #17b822;
+    /* Heading color */
+}
+
+
+.planet-card h3 {
+    color: #7f46c0;
+    /* Data heading color */
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.planet-card ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.planet-card li {
+    color: #437a4b;
+}
+
+.planet-card span {
+    color: #bcad0c;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+.planet-card p {
+    color: darkred;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+
+}
+.pagination button{
+    box-shadow: 0 9px #999;
+}
+.pagination button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.pagination button:hover {background-color: #3e8e41}
+
+
+
+@media (max-width: 768px) {
+    .planet-card {
+        width: 100%;
+        /* Adjusting width for smaller screens */
+    }
+}
